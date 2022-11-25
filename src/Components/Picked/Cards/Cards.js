@@ -1,23 +1,25 @@
-
-
-const Cards = ({one}) => {
-    
-    return (
-        <div>
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+const Cards = ({ one }) => {
+  const { name, picture, price, discount } = one;
+  return (
+    <div>
+      <div className="card card-compact w-[300px] bg-base-100 shadow-xl">
+        <figure>
+          <img src={picture} alt="S" />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">{name}</h2>
+          <div className="card-actions justify-between">
+            <div className=" text-sm">
+              <p>${price}</p>
+            </div>
+            <div className="text-orange-400 text-sm">
+              <p>-{discount}% off</p>
             </div>
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Cards;
