@@ -13,7 +13,7 @@ const Today = () => {
     return (
       <div>
         <div className="">
-          <h2 className="border-dashed font-bold border-b-2 text-xl border-orange-500 p-3">
+          <h2 className="border-dashed font-bold border-b-2 text-xl border-orange-500 p-3 mb-3">
             Today's hot deals
           </h2>
           <div className="grid grid-cols-5 gap-2">
