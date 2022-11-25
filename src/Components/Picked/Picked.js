@@ -10,7 +10,7 @@ const Picked = () => {
         .then((data) => setProducts(data));
     }, []);
     const six = products.slice(0, 6);
-    console.log(six);
+    // console.log(six);
   return (
     <div className="mt-20 flex">
       <div className=" w-2/5 mt-72">
