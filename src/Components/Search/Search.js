@@ -15,7 +15,7 @@ const Search = () => {
           <h2 className="border-dashed font-bold border-b-2 text-xl border-orange-500 p-3 mb-3">
             Your Search history
           </h2>
-          <div className="grid grid-cols-5 gap-2">
+          <div className="grid lg:grid-cols-5 grid-cols-1 lg:gap-2">
             {six.map((one) => (
               <Cards one={one} key={one._id}></Cards>
             ))}

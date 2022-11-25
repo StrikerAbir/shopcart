@@ -2,7 +2,7 @@ const Cards = ({ one }) => {
   const { name, picture, price, discount } = one;
   return (
     <div>
-      <div className="card card-compact w-[300px] bg-base-100 shadow-xl">
+      <div className="card card-compact lg:w-[300px] bg-base-100 shadow-xl">
         <figure>
           <img src={picture} alt="S" />
         </figure>

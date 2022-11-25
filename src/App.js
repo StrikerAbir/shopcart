@@ -10,7 +10,7 @@ import img from './images/Component 1.png'
 import img2 from './images/Rectangle 3.png'
 function App() {
   return (
-    <div className="max-w-[1560px] mx-auto">
+    <div className="max-w-[1560px]">
       <Navbar></Navbar>
       <Header></Header>
       <Options></Options>

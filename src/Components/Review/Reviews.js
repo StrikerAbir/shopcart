@@ -15,7 +15,7 @@ const Reviews = () => {
         <h2 className="border-dashed border-b-2 font-bold mb-3 text-xl border-orange-500 p-3">
           Reviews for you
         </h2>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-3">
           {six.map((one) => (
             <Review one={one} key={one._id}></Review>
           ))}
